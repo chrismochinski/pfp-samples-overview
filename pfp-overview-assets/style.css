@@ -1,0 +1,968 @@
+:root {
+  --black: #000000;
+  --cherry: #d7224c;
+  --forgiveness-red: #b31e2d;
+  --desert-storm: #f8f8f8;
+  --midnight-pearl: #70316e;
+  --prussian-blue: #0d3258;
+  --white: #ffffff;
+
+  --hover-pink: #9a3897;
+  --tre-green: #9db83f;
+
+  --roboto: "Roboto", Helvetica;
+  --thasadith: "Thasadith", Helvetica;
+  --zilla_slab: "Zilla Slab", Helvetica;
+
+  width: 100%;
+}
+
+body {
+  text-align: center;
+  background-color: var(--white);
+  margin: 0;
+}
+
+@media (min-width: 48.0625em) {
+  body {
+    width: calc(100vw - 300px) !important; /* compensate for iframe & left menu bar*/
+  }
+}
+
+@media (min-width: 2200px) {
+  #header {
+    background-size: 25% auto, 9% auto, 27% auto, 20% auto, 21% auto, 25% auto, 28.5% auto, 28% auto, 60% 25% !important;
+  }
+}
+
+.row {
+  margin-inline: auto;
+  position: relative;
+  max-width: 1080px;
+  padding-left: max(10vw, calc((100vw - 1280px) / 2));
+  padding-right: max(10vw, calc((100vw - 1280px) / 2));
+  overflow: hidden;
+  max-width: 1280px;
+}
+
+.row:not(:first-of-type) {
+  margin-block: 3rem;
+}
+
+p {
+  color: var(--black);
+  font-family: var(--roboto);
+  font-size: 1.25rem;
+  font-weight: normal;
+  margin-top: 2.25rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.column {
+  width: 26vw;
+  max-width: 454px;
+  min-width: 332px;
+}
+
+ul li {
+  list-style-type: disc;
+  font-size: 1.25rem;
+  text-align: left;
+}
+
+.inner-list {
+  margin-left: 2em;
+  list-style-type: circle !important;
+}
+
+.display-desktop {
+  display: block;
+}
+
+.display-tablet {
+  display: none;
+}
+
+img {
+  z-index: -100;
+}
+
+/* ------------- 1. header section ------------ */
+
+#header {
+  background-image: url("header-assets/purple-squiggles.svg"), url("header-assets/purple-dots-green-square-right.svg"),
+    url("header-assets/orange-blob-left.svg"), url("header-assets/teal-blob-right.svg"),
+    url("header-assets/orange-blob-line-left.svg"), url("header-assets/purple-blob-line-right.svg"),
+    url("header-assets/pink-blob-left.svg"), url("header-assets/green-blob-right.svg"),
+    url("header-assets/blue-blob-center.png");
+  background-position: 0 12px, 97% 13px, 0 0, 100% 0, 0 0, 100% 0, 0 0, 100% 0, 50% 0;
+  background-size: 25% auto, 9% auto, 27% auto, 20% auto, 21% auto, 25% auto, 28.5% auto, 28% auto, 60% auto;
+  background-repeat: no-repeat;
+}
+
+.header-text-wrapper {
+  padding-top: 0.8vw;
+}
+
+img.star {
+  margin-inline: auto;
+  padding-top: 1.5rem;
+  width: 15%;
+  min-width: 110px;
+}
+
+h3.supertitle {
+  background-image: url("yellow-squiggle-longest.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 10.5em;
+  color: var(--prussian-blue);
+  font-family: var(--thasadith);
+  font-size: 1.75rem;
+  padding-bottom: 11px;
+  margin-bottom: -8px;
+}
+
+h1.title {
+  color: var(--prussian-blue);
+  font-family: var(--zilla_slab);
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+#see-samples-button {
+  background-color: var(--midnight-pearl);
+  width: 180px;
+  height: 50px;
+  border-radius: 40px;
+  transition: 175ms ease-in-out;
+  font-size: 24px;
+  margin-inline: auto;
+}
+
+#see-samples-button a {
+  color: var(--white);
+  text-decoration: none;
+  font-family: var(--roboto);
+  line-height: 2;
+}
+
+#see-samples-button:hover {
+  background-color: var(--hover-pink);
+  box-shadow: 0px 4px 8px 1px rgb(0 0 0 / 0.25);
+  transition: 175ms ease-in-out;
+  transform: scale(1.025);
+}
+
+/* ------------- 2. triple icon section ------------ */
+
+#triple-icon {
+  padding-block: 2.25rem;
+  background-color: var(--desert-storm);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+#triple-icon .wrapper img.icon {
+  width: clamp(56px, 10vw, 144px);
+  height: auto;
+}
+
+.triple-icon-title {
+  color: var(--prussian-blue);
+  font-family: var(--zilla_slab);
+  font-size: 2.25rem;
+  font-weight: 600;
+  margin-block: 1.5rem 0;
+}
+
+h4.italic {
+  font-style: italic;
+  font-family: var(--roboto);
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-block: 0;
+}
+
+#triple-icon .wrapper img.line {
+  width: 80%;
+  max-width: 210px;
+  min-width: 120px;
+  height: 5px;
+}
+
+h5.supporting-text {
+  font-family: var(--roboto);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.125;
+  margin-block: 0.25rem;
+}
+
+/* ------------- 3. what to expect section (and 5. new campus resources ------------ */
+
+#what-to-expect h1.main-title {
+  background-image: url("red-straight-line.svg");
+  font-family: var(--zilla_slab);
+  color: var(--prussian-blue);
+  font-weight: 600;
+  font-size: 2.75rem;
+  background-size: 7em;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding-bottom: 8px;
+}
+
+/* general row text and alignment */
+.row-1,
+.row-2,
+.row-3,
+.row-4 {
+  text-align: left;
+  font-family: var(--roboto);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* row titles - zilla blue */
+.row-1 h1.row-title,
+.row-2 h1.row-title,
+.row-3 h1.row-title,
+.row-4 h1.row-title {
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  font-family: var(--zilla_slab);
+  color: var(--prussian-blue);
+  padding-bottom: 16px;
+  font-weight: 700;
+  margin-inline: auto;
+  margin-block: 0.5rem;
+}
+
+.row-1 h1.row-title {
+  background-image: url("yellow-squiggle-longest.svg");
+  background-size: 9.5em;
+}
+
+.row-2 h1.row-title {
+  background-image: url("yellow-squiggle-short.svg");
+  background-size: 7.5em;
+}
+
+.row-3 h1.row-title {
+  background-image: url("yellow-squiggle-longest.svg");
+  background-size: 10.75em;
+}
+
+.row-4 h1.row-title {
+  background-image: url("yellow-squiggle-longer.svg");
+  background-size: 9.05em;
+}
+
+.row-1 p,
+.row-2 p,
+.row-3 p {
+  margin-block: 1rem;
+}
+
+.row-1 img,
+.row-2 img,
+.row-3 img {
+  /* width: clamp(283px, 33vw, 507px); */
+  width: 100%;
+  height: auto;
+}
+
+.tree {
+  border-radius: 24px;
+  border: 10px solid white;
+  box-shadow: 0px 4px 8px 1px rgb(0 0 0 / 25%);
+  width: 100%;
+}
+
+/* ------------- 4. well strong kind chart section ------------ */
+
+#well-strong-kind-chart img {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  /* max-width: 985px; */
+  margin-inline: auto;
+  margin-block: 1rem;
+}
+
+/* -------------- 5. new campus resources section -------------- */
+
+#new-campus-resources {
+  background-color: var(--desert-storm);
+  padding-block: 3.5rem;
+}
+
+#new-campus-resources ul {
+  margin-bottom: 2rem;
+}
+
+#new-campus-resources p {
+  line-height: 1;
+}
+
+/* -------------- 6 Three Friends + Original Production -------------- */
+
+.row-4 {
+  margin-block: 1rem;
+}
+
+/* the flex row, column on mobile */
+.three-friends-wrapper {
+  padding-block: 2.25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  /* margin-right: 1.5vw; */
+}
+
+/* wrapper around each friend + supporting text */
+.friend-wrapper {
+  text-align: center;
+  margin-inline: 1vw;
+  width: clamp(161px, 12vw, 230px);
+}
+
+/* each friend's phys size and stuff */
+.friend-wrapper img {
+  width: auto;
+  /* height: 232px; */
+  height: clamp(142px, 13vw, 232px);
+
+  object-fit: cover;
+}
+
+/* style for all friends names */
+.row-4 h1.row-title {
+  font-family: var(--zilla_slab);
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-block: 1rem;
+}
+
+h1.sol {
+  color: var(--forgiveness-red);
+}
+
+h1.ida {
+  color: var(--midnight-pearl);
+}
+
+h1.tre {
+  color: var(--tre-green);
+}
+
+/* word associated under each friend name */
+.friend-word {
+  font-family: var(--roboto);
+  color: var(--prussian-blue);
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.125;
+  margin-block: 0.25rem;
+}
+
+.row-4 .right {
+  margin-left: 2.5vw;
+}
+
+/* support sentence original production right col text */
+.row-4 .right p {
+  margin-block: 0 2rem;
+}
+
+/* -------------- 7. Music player section - Empathy song -------------- */
+
+#music-player {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  gap: 3vw;
+  padding-block: 1rem 2rem;
+}
+
+.title-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.note {
+  max-height: 55px;
+  height: 4vw;
+  margin-right: 1vw;
+}
+
+.song-title {
+  max-height: 90px;
+  height: 5vw;
+  margin-left: 1vw;
+}
+
+.audio-player {
+  border-radius: 56px;
+  border: 1.25vw solid var(--midnight-pearl);
+  width: 654px;
+  margin-block: 1.5em 0.75em;
+}
+
+.player-wrapper {
+  width: 38vw;
+}
+
+/* -------------- 8. footer row -------------- */
+
+#footer {
+  background-image: url("exp-footer.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-color: var(--desert-storm);
+  margin-bottom: 0;
+  text-align: center;
+  height: clamp(750px, 41vw, 939px);
+}
+
+#footer h1 {
+  padding-block: 4rem 1rem;
+  font-family: var(--zilla_slab);
+  font-size: 1.85rem;
+  font-weight: 800;
+  margin-block: 1rem;
+}
+
+#footer h3 {
+  font-family: var(--roboto);
+  font-size: 1.85rem;
+  max-width: 60vw;
+  font-weight: 400;
+  margin-inline: auto;
+}
+
+.buttons-wrapper {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.button-wrapper h4 {
+  font-family: var(--roboto);
+  color: var(--prussian-blue);
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-block: 1rem;
+}
+
+.button-frame {
+  align-items: flex-end;
+  background-color: var(--cherry);
+  border-radius: 40px;
+  display: flex;
+  height: 79px;
+  width: 294px;
+  padding: 0 20px;
+  transition: 250ms ease-in-out;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer a {
+  color: var(--white);
+  font-family: var(--roboto);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  text-decoration-line: none;
+  margin-inline: auto;
+}
+
+.button-frame:hover {
+  background-color: var(--forgiveness-red);
+  box-shadow: 0px 4px 8px 1px rgb(0 0 0 / 0.25);
+  transition: 175ms ease-in-out;
+  transform: scale(1.025);
+}
+
+@media (max-width: 1200px) {
+  ul li {
+    font-size: 1.125em;
+  }
+
+  ul {
+    padding-left: 1.75em;
+  }
+
+  .inner-list {
+    margin-left: 1.25em;
+  }
+
+  .row-4 {
+    flex-direction: column;
+  }
+
+  .friend-wrapper {
+    width: 220px;
+  }
+
+  .friend-image {
+    height: 209px !important;
+  }
+
+  #music-player {
+    flex-direction: column;
+  }
+
+  .note {
+    height: 65vw;
+  }
+
+  .song-title {
+    height: 90vw;
+  }
+
+  .player-wrapper {
+    width: 60vw;
+  }
+
+  .audio-player {
+    margin-top: 0;
+  }
+
+  .button-wrapper h4 {
+    font-size: 1.25em;
+  }
+
+  .button-frame {
+    height: 64px;
+    width: 248px;
+    padding: 0 15px;
+  }
+
+  #footer a {
+    font-size: 1.25em;
+  }
+}
+
+/*
+  _______       ____  _      ______ _______     _____ _________     ___      ______  _____ 
+ |__   __|/\   |  _ \| |    |  ____|__   __|   / ____|__   __\ \   / / |    |  ____|/ ____|
+    | |  /  \  | |_) | |    | |__     | |     | (___    | |   \ \_/ /| |    | |__  | (___  
+    | | / /\ \ |  _ <| |    |  __|    | |      \___ \   | |    \   / | |    |  __|  \___ \ 
+    | |/ ____ \| |_) | |____| |____   | |      ____) |  | |     | |  | |____| |____ ____) |
+    |_/_/    \_\____/|______|______|  |_|     |_____/   |_|     |_|  |______|______|_____/ 
+
+*/
+
+@media (max-width: 991px) {
+  /* ------------- GLOBALS ------------ */
+
+  .column {
+    width: 100%;
+    min-width: unset;
+    max-width: unset;
+    margin-inline: auto;
+  }
+
+  .column img {
+    min-width: 286px;
+  }
+
+  ul {
+    display: inline-block;
+  }
+
+  ul li {
+    font-size: 1.5rem;
+  }
+
+  .display-desktop {
+    display: none;
+  }
+
+  .display-tablet {
+    display: block;
+  }
+
+  .row {
+    padding-inline: 6%;
+    margin-block: 0;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  /* ---- END GLOBAL TABLET STYLES ---- */
+
+  h3.supertitle {
+    font-size: 2em;
+  }
+
+  .triple-icon-title {
+    font-size: 1.75rem;
+  }
+
+  h4.italic {
+    font-size: 1.25rem;
+  }
+
+  h5.supporting-text {
+    font-size: 1.25rem;
+  }
+
+  /* ------------- 3. what to expect TABLET ------------ */
+
+  #what-to-expect h1.main-title {
+    font-size: 3.5rem;
+    margin-block: 0 1.25rem;
+  }
+
+  .row-1,
+  .row-2,
+  .row-3,
+  .row-4 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .row-1 h1.row-title,
+  .row-2 h1.row-title,
+  .row-3 h1.row-title,
+  .row-4 h1.row-title {
+    background-position: center bottom;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-inline: auto;
+    margin-block: 2rem 0;
+  }
+
+  .row-1 p,
+  .row-2 p,
+  .row-3 p {
+    font-size: 1.5rem;
+  }
+
+  .row-1 img,
+  .row-2 img {
+    margin-block: -1rem;
+  }
+
+  .row-1 img,
+  .row-2 img,
+  .row-3 img {
+    width: 94%;
+  }
+
+  /* ------------- 4. well strong kind chart TABLET ------------ */
+
+  #well-strong-kind-chart img {
+    width: 99%;
+    margin-inline: auto;
+  }
+
+  #new-campus-resources img {
+    margin-block: 3rem 2rem;
+  }
+
+  /* -------------- 6. three friends TABLET -------------- */
+
+  .three-friends-wrapper {
+    margin-right: unset;
+    width: 95%;
+  }
+
+  .friend-wrapper {
+    width: 186px;
+    margin-inline: 0;
+  }
+
+  .friend-wrapper h1 {
+    margin-bottom: 0.25em;
+  }
+
+  .friend-wrapper .friend-image {
+    height: 180px !important;
+  }
+
+  .friend-word {
+    font-size: 1.5em;
+  }
+
+  .row-4 .right {
+    margin-left: unset;
+  }
+
+  .row-4 p {
+    margin-top: 1rem;
+  }
+
+  /* -------------- 7. Music player section - Empathy song TABLET -------------- */
+
+  #music-player {
+    flex-direction: column;
+    gap: unset;
+  }
+
+  .player-wrapper {
+    width: 95%;
+    margin-top: 1em;
+  }
+
+  .audio-player {
+    border-width: 3vw;
+  }
+
+  /* -------------- 8. footer row TABLET -------------- */
+
+  #footer {
+    height: 78vh;
+  }
+
+  #footer h1 {
+    padding-top: 1.5rem;
+    font-size: 2.25rem;
+  }
+
+  #footer h3 {
+    max-width: unset;
+    font-size: 1.5rem;
+  }
+
+  .buttons-wrapper {
+    padding-top: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+  }
+
+  .button-wrapper:first-of-type {
+    margin-bottom: 0.5rem;
+  }
+
+  .button-wrapper h4 {
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .button-frame {
+    margin-inline: auto;
+  }
+}
+
+/*
+  __  __  ____  ____ _____ _      ______      _____ _________     ___      ______  _____ 
+ |  \/  |/ __ \|  _ \_   _| |    |  ____|    / ____|__   __\ \   / / |    |  ____|/ ____|
+ | \  / | |  | | |_) || | | |    | |__      | (___    | |   \ \_/ /| |    | |__  | (___  
+ | |\/| | |  | |  _ < | | | |    |  __|      \___ \   | |    \   / | |    |  __|  \___ \ 
+ | |  | | |__| | |_) || |_| |____| |____     ____) |  | |     | |  | |____| |____ ____) |
+ |_|  |_|\____/|____/_____|______|______|   |_____/   |_|     |_|  |______|______|_____/ 
+ 
+*/
+
+@media (max-width: 576px) {
+  .row {
+    padding-inline: 4%;
+    margin-block: 2.5em;
+  }
+
+  #header {
+    background-size: 34% auto, 17% auto, 33% auto, 28% auto, 29% auto, 33% auto, 36% auto, 35% auto, 90% auto;
+    margin-top: 0 !important;
+  }
+
+  /* triple icon section vertical on mobile */
+  #triple-icon {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wrapper:not(:last-of-type) {
+    margin-bottom: 3.5rem;
+  }
+
+  #triple-icon .wrapper img.icon {
+    width: 50vw;
+    min-width: 140px;
+    height: auto;
+  }
+
+  #triple-icon .wrapper img.line {
+    width: 90%;
+    max-width: 210px;
+    height: 6px;
+  }
+
+  .triple-icon-title {
+    margin-top: 1rem;
+    font-size: 2.5rem;
+  }
+
+  .row-1 h1.row-title,
+  .row-2 h1.row-title,
+  .row-3 h1.row-title,
+  .row-4 h1.row-title {
+    background-position: center bottom;
+    font-size: 2rem;
+  }
+
+  h4.italic {
+    font-size: 1.75rem;
+  }
+
+  h5.supporting-text {
+    font-size: 1.75rem;
+  }
+
+  p {
+    max-width: 100%;
+  }
+
+  /* ------------- 3. what to expect MOBILE ------------ */
+
+  #what-to-expect h1.main-title {
+    background-size: 4em;
+  }
+
+  .row-1 h1.row-title {
+    background-image: url("yellow-squiggle-shortest.svg");
+    background-size: 8em;
+  }
+
+  .row-1 img,
+  .row-3 img {
+    margin-block: 1rem;
+  }
+
+  /* ------ 4. well strong kind chart section ------ */
+
+  #well-strong-kind-chart img {
+    width: 96%;
+    margin-block: unset;
+  }
+
+  /* --------5. new campus resources section -------- */
+
+  #new-campus-resources {
+    padding-block: 1.5rem 2rem;
+  }
+
+  #new-campus-resources h1 {
+    background-image: url("yellow-squiggle-longer.svg");
+    background-size: 10em;
+  }
+
+  /* -------------- 6. three friends MOBILE -------------- */
+
+  #three-friends {
+    margin-bottom: 1rem;
+  }
+
+  .row-4 {
+    margin-top: 0;
+  }
+
+  .row-4 h1.row-title {
+    margin-top: 0;
+  }
+
+  .three-friends-wrapper {
+    flex-direction: column;
+    padding-bottom: 1rem;
+  }
+
+  .friend-wrapper {
+    height: 375px;
+    margin-inline: auto;
+    width: 275px;
+  }
+
+  .friend-wrapper:not(:last-of-type) {
+    margin-bottom: 1.75rem;
+  }
+
+  .friend-wrapper .friend-image {
+    height: 245px !important; /* back to big */
+  }
+
+  .sol,
+  .ida,
+  .tre {
+    font-size: 3rem;
+    margin-block: 1rem 0;
+  }
+
+  .friend-word {
+    padding-bottom: 5em;
+  }
+
+  /* -------------- 7. Music player section - Empathy song MOBILE -------------- */
+
+  #music-player {
+    margin-block: 1vh;
+  }
+
+  .note {
+    height: 43px;
+  }
+  .song-title {
+    height: 60px;
+  }
+
+  .player-wrapper {
+    width: 95vw;
+  }
+
+  /* -------------- 8. footer row MOBILE -------------- */
+
+  #footer {
+    height: 46rem; /* 90vh cut off bottom button on iPhone */
+    margin-top: 1rem;
+  }
+
+  #footer h1 {
+    font-size: 2rem;
+    margin-inline: 4vw;
+  }
+
+  #footer h3 {
+    font-size: 1.25rem;
+    margin-inline: 4vw;
+  }
+
+  .button-wrapper h4 {
+    font-size: 1.25rem;
+  }
+
+  #footer .button-frame {
+    width: 256px;
+    height: 70px;
+  }
+
+  #footer a {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+}
