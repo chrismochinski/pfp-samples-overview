@@ -108,57 +108,47 @@ img {
 }
 
 .header-text-wrapper {
-  padding-top: 0.8vw;
-}
-
-img.star {
-  margin-inline: auto;
   padding-top: 1.5rem;
-  width: 15%;
-  min-width: 110px;
 }
 
 h3.supertitle {
-  background-image: url("yellow-squiggle-longest.svg");
+  background-image: url("yellow-squiggle-longer.svg");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: 10.5em;
   color: var(--prussian-blue);
-  font-family: var(--thasadith);
-  font-size: 1.75rem;
-  padding-bottom: 11px;
-  margin-bottom: -8px;
-}
-
-h1.title {
-  color: var(--prussian-blue);
-  font-family: var(--zilla_slab);
-  font-size: 2.25rem;
-  font-weight: 600;
-}
-
-#see-samples-button {
-  background-color: var(--midnight-pearl);
-  width: 180px;
-  height: 50px;
-  border-radius: 40px;
-  transition: 175ms ease-in-out;
-  font-size: 24px;
-  margin-inline: auto;
-}
-
-#see-samples-button a {
-  color: var(--white);
-  text-decoration: none;
   font-family: var(--roboto);
-  line-height: 2;
+  font-size: 2em;
+  font-weight: 500;
+  padding-top: 10vw;
+  padding-bottom: 24px;
+  margin-bottom: 1rem;
 }
 
-#see-samples-button:hover {
-  background-color: var(--hover-pink);
-  box-shadow: 0px 4px 8px 1px rgb(0 0 0 / 0.25);
-  transition: 175ms ease-in-out;
-  transform: scale(1.025);
+.row-0 {
+  height: 40vh;
+}
+
+p {
+  text-align: left;
+  font-size: 1.5em;
+}
+
+#header .left {
+  flex-basis: 40%;
+}
+
+#header .right {
+  align-items: center;
+  display: flex;
+  flex-basis: 60%;
+}
+
+iframe {
+  border-radius: 24px;
+  border: 10px solid white;
+  box-shadow: 0px 10px 16px rgb(0 0 0 / 7%);
+  max-width: 100%;
 }
 
 /* ------------- 2. triple icon section ------------ */
@@ -223,6 +213,7 @@ h5.supporting-text {
 }
 
 /* general row text and alignment */
+.row-0,
 .row-1,
 .row-2,
 .row-3,
@@ -504,6 +495,15 @@ h1.tre {
 }
 
 @media (max-width: 1200px) {
+  .row-0 p {
+    font-size: 1.25em;
+  }
+
+  h3.supertitle {
+    margin-bottom: 0;
+    padding-top: 14vh;
+  }
+
   ul li {
     font-size: 1.125em;
   }
@@ -630,13 +630,31 @@ h1.tre {
     font-size: 1.25rem;
   }
 
+  /* ------------- 1. header TABLET ------------ */
+
+  #header h3.supertitle {
+    padding-top: 17vh;
+  }
+
+  .row-0 {
+    height: 52vh;
+  }
+
+  #header.right {
+    padding-bottom: 3rem;
+  }
+
+  iframe {
+    margin-inline: auto;
+  }
+
   /* ------------- 3. what to expect TABLET ------------ */
 
   #what-to-expect h1.main-title {
     font-size: 3.5rem;
     margin-block: 0 1.25rem;
   }
-
+  .row-0,
   .row-1,
   .row-2,
   .row-3,
