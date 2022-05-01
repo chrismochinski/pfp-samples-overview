@@ -664,7 +664,9 @@ h1.tre {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+    gap: 0;
+    justify-content: flex-start; /*idea*/
+    height: 100%; /*idea*/
 
   .row-1 h1.row-title,
   .row-2 h1.row-title,
