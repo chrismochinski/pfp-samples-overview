@@ -224,6 +224,7 @@ h5.supporting-text {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  gap: 1.5rem; /* apply to expansion? */
 }
 
 /* row titles - zilla blue */
