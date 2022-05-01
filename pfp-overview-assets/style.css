@@ -667,6 +667,7 @@ h1.tre {
     gap: 0;
     justify-content: flex-start; /*idea*/
     height: 100%; /*idea*/
+  }
 
   .row-1 h1.row-title,
   .row-2 h1.row-title,
