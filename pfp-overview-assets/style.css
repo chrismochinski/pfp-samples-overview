@@ -156,10 +156,10 @@ iframe {
 #triple-icon {
   padding-block: 2.25rem;
   background-color: var(--desert-storm);
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: flex-end;
+  align-items: flex-end; */
 }
 
 #triple-icon .wrapper img.icon {
