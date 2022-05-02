@@ -200,7 +200,7 @@ h5.supporting-text {
 
 /* ------------- 3. what to expect section (and 5. new campus resources ------------ */
 
-#what-to-expect h1.main-title {
+#what-to-expect h1.main-title, #triple-icon h1.main-title {
   background-image: url("red-straight-line.svg");
   font-family: var(--zilla_slab);
   color: var(--prussian-blue);
@@ -214,6 +214,7 @@ h5.supporting-text {
 
 /* general row text and alignment */
 .row-0,
+.row-div2,
 .row-1,
 .row-2,
 .row-3,
