@@ -237,7 +237,7 @@ h5.supporting-text {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  gap: 1.5rem; /* apply to expansion? */
+  gap: 1rem;
 }
 
 /* row titles - zilla blue, yellow squig ULs */
@@ -267,8 +267,8 @@ h5.supporting-text {
 }
 
 .row-3 h1.row-title {
-  background-image: url("yellow-squiggle-longest.svg");
-  background-size: 10.75em;
+  background-image: url("yellow-squiggle-medium.svg");
+  background-size: 8.5em;
 }
 
 .row-4 h1.row-title {
@@ -377,7 +377,8 @@ h1.tre {
 
 /* support sentence original production right col text */
 .row-4 .right p {
-  margin-block: 0 2rem;
+  margin-block: 1rem 2rem;
+  font-size: 1.25rem;
 }
 
 /* -------------- 7. Music player section - Empathy song -------------- */
