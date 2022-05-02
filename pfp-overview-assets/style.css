@@ -903,7 +903,7 @@ h1.tre {
   /* ---------------- 1. Header MOBILE ---------------- */
 
   h3.supertitle {
-    padding-top: 11vh !important;
+    padding-top: 16vh !important;
     font-size: 2.125rem;
     background-size: 9em;
     padding-bottom: 19px;
@@ -919,7 +919,7 @@ h1.tre {
     background-size: 5em;
     font-size: 2.5rem;
   }
-  
+
   .row-div2 {
     flex-direction: column; /* vertical display on mobile */
     align-items: center;
@@ -1025,7 +1025,7 @@ h1.tre {
   /* -------------- 8. footer row MOBILE -------------- */
 
   #footer {
-    height: 30rem; 
+    height: 30rem;
     margin-top: 1rem;
   }
 
