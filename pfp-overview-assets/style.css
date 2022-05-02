@@ -437,7 +437,7 @@ h1.tre {
   background-color: var(--desert-storm);
   margin-bottom: 0;
   text-align: center;
-  height: clamp(750px, 41vw, 939px);
+  height: clamp(406px, 34vw, 617px);
 }
 
 #footer h1 {
@@ -457,7 +457,7 @@ h1.tre {
 }
 
 .buttons-wrapper {
-  padding-top: 2rem;
+  padding-top: 4rem;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -797,7 +797,7 @@ h1.tre {
   /* -------------- 8. footer row TABLET -------------- */
 
   #footer {
-    height: 78vh;
+    height: 55vh;
   }
 
   #footer h1 {
@@ -811,7 +811,6 @@ h1.tre {
   }
 
   .buttons-wrapper {
-    padding-top: 0;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -1026,7 +1025,7 @@ h1.tre {
   /* -------------- 8. footer row MOBILE -------------- */
 
   #footer {
-    height: 46rem; /* 90vh cut off bottom button on iPhone */
+    height: 30rem; 
     margin-top: 1rem;
   }
 
