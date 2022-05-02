@@ -276,12 +276,6 @@ h5.supporting-text {
   background-size: 9.05em;
 }
 
-.row-1 p,
-.row-2 p,
-.row-3 p {
-  margin-block: 1rem;
-}
-
 .row-1 img,
 .row-2 img,
 .row-3 img {
@@ -354,14 +348,6 @@ h5.supporting-text {
 
   object-fit: cover;
 }
-
-/* style for all friends names */
-/* .row-4 h1.row-title {
-  font-family: var(--zilla_slab);
-  font-size: 2.25rem;
-  font-weight: 700;
-  margin-block: 1rem;
-} */
 
 h1.sol {
   color: var(--forgiveness-red);
@@ -712,12 +698,6 @@ h1.tre {
     font-size: 3rem;
     margin-inline: auto;
     margin-block: 2rem 0;
-  }
-
-  .row-1 p,
-  .row-2 p,
-  .row-3 p {
-    font-size: 1.5rem;
   }
 
   .row-1 img,
