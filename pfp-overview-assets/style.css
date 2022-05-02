@@ -156,10 +156,9 @@ iframe {
 #triple-icon {
   padding-block: 2.25rem;
   background-color: var(--desert-storm);
-  /* display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-end; */
+}
+#triple-icon .row-div2 .wrapper {
+  text-align: center;
 }
 
 #triple-icon .wrapper img.icon {
@@ -227,6 +226,7 @@ h5.supporting-text {
   justify-content: space-around;
   gap: 1.5rem; /* apply to expansion? */
 }
+
 
 /* row titles - zilla blue */
 .row-1 h1.row-title,
