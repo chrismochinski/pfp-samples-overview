@@ -59,9 +59,22 @@ a {
 */
 
 @media (max-width: 576px) {
-    .double-button {
-        /* flex-direction: column; */
-        gap: 0.75rem;
-        margin-block: 2.5rem 1.125rem;
-    }
+  .double-button {
+    /* flex-direction: column; */
+    gap: 0.75rem;
+    margin-block: 2.5rem 1.125rem;
+  }
+
+  .double-button-button-wrapper {
+    padding: 14px 20px;
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 340px) {
+  .double-button {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-block: 1.25rem 1rem;
+  }
 }
