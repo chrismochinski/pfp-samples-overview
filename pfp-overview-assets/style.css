@@ -654,6 +654,10 @@ h1.tre {
     display: block;
   }
 
+  .column .display-tablet {
+    margin-block: 3rem;
+  }
+
   .row {
     padding-inline: 6%;
     margin-block: 0;
@@ -715,8 +719,7 @@ h1.tre {
   }
 
   .row-1 h1.row-title {
-    background-image: url("yellow-squiggle-longest.svg");
-    background-size: 12em;
+    background-size: 7em;
   }
 
   .row-0,
@@ -739,7 +742,7 @@ h1.tre {
   .row-4 h1.row-title {
     background-position: center bottom;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-inline: auto;
     margin-block: 2rem 0;
     padding-bottom: 24px;
