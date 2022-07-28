@@ -612,6 +612,10 @@ h1.tre {
   #footer a {
     font-size: 1.25em;
   }
+
+  .row-1 img.monitor {
+    width: 91% !important;
+  }
 }
 
 /*
@@ -666,6 +670,7 @@ h1.tre {
   p {
     font-size: 1.5rem;
   }
+
 
   /* ---- END GLOBAL TABLET STYLES ---- */
 
@@ -732,8 +737,8 @@ h1.tre {
     flex-direction: column;
     align-items: center;
     gap: 0;
-    justify-content: flex-start; /*idea*/
-    height: 100%; /*idea*/
+    justify-content: flex-start;
+    height: 100%;
   }
 
   .row-1 h1.row-title,
@@ -748,7 +753,17 @@ h1.tre {
     padding-bottom: 24px;
   }
 
-  .row-1 img,
+  .monitor-base {
+    width: 97% !important;
+    min-width: 423px !important; /*idea - change on mobile*/
+    margin-top: -3px !important;
+  }
+
+  .left.column.display-tablet.computer-monitor {
+    display: block !important;
+  }
+
+  /* .row-1 img, */
   .row-2 img {
     margin-block: -1rem;
   }
@@ -766,9 +781,9 @@ h1.tre {
     margin-inline: auto;
   }
 
-  #new-campus-resources img {
+  /* #new-campus-resources img {
     margin-block: 3rem 2rem;
-  }
+  } */
 
   /* -------------- 6. three friends TABLET -------------- */
 
@@ -945,7 +960,7 @@ h1.tre {
 
   #triple-icon h1.main-title {
     background-size: 5em;
-    font-size: 2.5rem;
+    font-size: 2.5rem;91%
   }
 
   .row-div2 {
@@ -965,9 +980,16 @@ h1.tre {
     background-size: 6em;
   }
 
-  .row-1 img,
+  .row-1 img.monitor {
+    width: 89% !important;
+}
+
   .row-3 img {
     margin-block: 1rem;
+  }
+
+  .monitor-base {
+    min-width: 320px !important;
   }
 
   /* ------ 4. well strong kind chart section ------ */
