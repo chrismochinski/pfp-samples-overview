@@ -26,6 +26,42 @@
   </script>
 </head>
 
+<style>
+  /* big sample button addition 9/1/22*/
+
+  .big-sample-button {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 14px 24px;
+  border: 1px solid #d7224c;
+  background-color: #d7224c;
+  border-radius: 40px;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+  height: 28px;
+  width: 190px;
+  margin-inline: auto;
+  margin-top: 1.5em;
+  margin-bottom: -0.5em;
+}
+
+.big-sample-button a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  font-weight: bold;
+}
+
+.big-sample-button:hover {
+  background-color: #B31E2D;
+  transform: scale(1.05);
+  box-shadow: 0px 2px 6px #00000040;
+  transition: all 200ms ease-in-out;
+}
+
+
+</style>
+
 <body>
   <!--header section - bg images, down to description text-->
   <div id="header" class="row">
@@ -35,11 +71,15 @@
     </h3>
     <!--end header title-->
 
+    <!-- modding to a TRIPLE button 9/1/22? Larger See A Sample button on own line??? -->
     <!--added double button section a-la cs.com-->
+    <div class="big-sample-button">
+      <a href="/content/sample-grade-2-empathy-week-1">See A Sample</a>
+    </div>
     <div class="double-button">
-      <a class="double-button-button-wrapper double-button-first" href="https://characterstrong.com/book-a-call/"
+      <a class="double-button-button-wrapper double-button-first" style="background-color: #fff;" href="https://characterstrong.com/book-a-call/"
         target="_blank">
-        <div class="button-first-text">Book a Call</div>
+        <div class="button-first-text" style=" color: #d7224c !important;">Book a Call</div>
       </a>
       <a class="double-button-button-wrapper double-button-second" href="https://characterstrong.com/demo-calendar/"
         target="_blank">
